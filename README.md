@@ -1,13 +1,15 @@
 # movies
 
 A new Flutter project.
-
+- with firebase and TMDB API[(The Movie Database api)](https://developers.themoviedb.org/3).
+- The app contains all movies\shows info and their video trailers.
+- To add Video trailer i used youtube_player_iframs Package.
+- Download apk from [here](https://mega.nz/file/OgV0iB6Q#l1Yb9ZA3pS6VQVu9QAJKEZT1HmIzPrb8YgFu6_UKTIY)
 
 <p align="center">
 <img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161624.jpg" width="30%">
 <img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161645.jpg" width="30%">
 <img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161708.jpg" width="30%">
-<img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161731.jpg" width="30%">
 <img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161718.jpg" width="30%">
 <img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161847.jpg" width="30%">
 <img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161853.jpg" width="30%">
