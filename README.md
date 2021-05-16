@@ -2,6 +2,19 @@
 
 A new Flutter project.
 
+
+<p align="center">
+<img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161624.jpg" width="30%">
+<img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161645.jpg" width="30%">
+<img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161708.jpg" width="30%">
+<img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161731.jpg" width="30%">
+<img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161718.jpg" width="30%">
+<img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161847.jpg" width="30%">
+<img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161853.jpg" width="30%">
+<img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161902.jpg" width="30%">
+<img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161939.jpg" width="30%">
+<img src="https://github.com/Appii00/Flutter-Bloc-Movies-App/blob/master/Screenshot_20210516-161919.jpg" width="30%">
+</p>
 ## Getting Started
 
 This project is a starting point for a Flutter application.
