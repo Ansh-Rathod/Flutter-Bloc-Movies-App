@@ -309,6 +309,8 @@ class TvInfo extends StatelessWidget {
             ));
           } else if (state is TvInfoError) {
             return Center(child: Text("Errror"));
+          } else {
+            return Scaffold();
           }
         },
       ),
