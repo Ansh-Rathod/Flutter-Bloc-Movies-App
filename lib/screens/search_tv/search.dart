@@ -121,8 +121,9 @@ class SearchPageTv extends StatelessWidget {
                 )),
               ],
             );
+          } else {
+            return Scaffold();
           }
-          return Container();
         },
       ),
     );

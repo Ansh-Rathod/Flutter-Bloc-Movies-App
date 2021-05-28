@@ -281,6 +281,8 @@ class MovieInfo extends StatelessWidget {
             ));
           } else if (state is MovieInfoError) {
             return Center(child: Text("Errror"));
+          }     else {
+            return Scaffold();
           }
         },
       ),

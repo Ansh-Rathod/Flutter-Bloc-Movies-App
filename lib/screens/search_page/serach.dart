@@ -131,8 +131,9 @@ class SearchPage extends StatelessWidget {
                 )),
               ],
             );
+          } else {
+            return Scaffold();
           }
-          return Container();
         },
       ),
     );

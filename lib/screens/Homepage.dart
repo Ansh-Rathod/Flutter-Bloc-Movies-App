@@ -134,8 +134,9 @@ class Home extends StatelessWidget {
                 )),
               ],
             );
+          } else {
+            return Scaffold();
           }
-          return Container();
         },
       ),
     );
