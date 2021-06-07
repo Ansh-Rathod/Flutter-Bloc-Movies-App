@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 import 'package:movies/blocs/movie_bloc/movie_info_bloc.dart';
 import 'package:movies/screens/widgets/company_carasouls.dart';
 import 'package:movies/screens/widgets/image_grid.dart';
@@ -59,18 +60,9 @@ class MovieInfo extends StatelessWidget {
                         SliverToBoxAdapter(
                             child: RotatedBox(
                           quarterTurns: 4,
-                          child: YoutubePlayerIFrame(
-                            controller: YoutubePlayerController(
-                              initialVideoId: state.videos['results'][0]['key'],
-                              params: YoutubePlayerParams(
-                                showControls: true,
-                                mute: true,
-                                autoPlay: false,
-                                showFullscreenButton: true,
-                              ),
-                            ),
-                            aspectRatio: 16 / 9,
-                          ),
+                          child: HtmlWidget(
+                              '<iframe width="${MediaQuery.of(context).size.width}" height="260" src="https://www.youtube.com/embed/${state.videos['results'][0]['key']}"  allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>',
+                              webView: true),
                         ))
                       else
                         SliverToBoxAdapter(
@@ -281,7 +273,7 @@ class MovieInfo extends StatelessWidget {
             ));
           } else if (state is MovieInfoError) {
             return Center(child: Text("Errror"));
-          }     else {
+          } else {
             return Scaffold();
           }
         },
@@ -298,16 +290,29 @@ class MovieInfo extends StatelessWidget {
       child: RichText(
           text: TextSpan(style: TextStyle(color: Colors.black), children: [
         TextSpan(
-          text: "$type:\n",
+          text: "$type",
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 16,
           ),
         ),
-        TextSpan(
-          text: " $info",
-        ),
+        if (info != "")
+          TextSpan(
+            text: "\n$info",
+          ),
       ])),
     );
   }
 }
+// YoutubePlayerIFrame(
+                          //   controller: YoutubePlayerController(
+                          //     initialVideoId: state.videos['results'][0]['key'],
+                          //     params: YoutubePlayerParams(
+                          //       showControls: true,
+                          //       mute: true,
+                          //       autoPlay: false,
+                          //       showFullscreenButton: true,
+                          //     ),
+                          //   ),
+                          //   aspectRatio: 16 / 9,
+                          // ),

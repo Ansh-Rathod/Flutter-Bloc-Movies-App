@@ -18,7 +18,7 @@ class SearchPage extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text(
-          "TMDB Show",
+          "TMDB",
           style: TextStyle(
               fontSize: 20, fontWeight: FontWeight.bold, color: Colors.black),
         ),
