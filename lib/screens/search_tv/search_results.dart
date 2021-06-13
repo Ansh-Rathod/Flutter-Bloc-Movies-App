@@ -7,6 +7,7 @@ import 'package:movies/screens/movieinfo.dart';
 import 'package:movies/screens/search_page/cubit/search_cubit.dart';
 import 'package:movies/screens/search_tv/cubit/search_tv_shows_cubit.dart';
 import 'package:movies/screens/tv_info.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class InitalTv extends StatelessWidget {
   final String value;
@@ -28,7 +29,10 @@ class InitalTv extends StatelessWidget {
         ),
         body: state.status == TvStatus.loading
             ? Center(
-                child: CircularProgressIndicator(),
+                child: SpinKitSquareCircle(
+                  color: Colors.white,
+                  size: 50.0,
+                ),
               )
             : state.status == TvStatus.success
                 ? Gridmovies(movies: state.movies)

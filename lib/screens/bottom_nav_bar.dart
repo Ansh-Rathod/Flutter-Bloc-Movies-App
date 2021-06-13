@@ -34,19 +34,19 @@ class _BottomNavViewState extends State<BottomNavView> {
       PersistentBottomNavBarItem(
         inactiveColorPrimary: Colors.grey,
         icon: Icon(Icons.home),
-        activeColorPrimary: Colors.blue,
+        activeColorPrimary: Colors.orangeAccent,
         title: ("Home"),
       ),
       PersistentBottomNavBarItem(
         inactiveColorPrimary: Colors.grey,
         icon: Icon(Icons.search),
-        activeColorPrimary: Colors.blue,
+        activeColorPrimary: Colors.orangeAccent,
         title: ("Movies"),
       ),
       PersistentBottomNavBarItem(
         inactiveColorPrimary: Colors.grey,
         icon: Icon(Icons.tv),
-        activeColorPrimary: Colors.blue,
+        activeColorPrimary: Colors.orangeAccent,
         title: ("Tv Shows"),
       ),
       // PersistentBottomNavBarItem(

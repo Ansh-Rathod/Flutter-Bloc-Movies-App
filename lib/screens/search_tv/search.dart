@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:movies/blocs/bloc/search_tv_bloc.dart';
 import 'package:movies/screens/search_tv/cubit/search_tv_shows_cubit.dart';
@@ -22,7 +23,10 @@ class SearchPageTv extends StatelessWidget {
         builder: (context, state) {
           if (state is SearchTvLoading) {
             return Center(
-              child: CircularProgressIndicator(),
+              child: SpinKitSquareCircle(
+                color: Colors.orangeAccent,
+                size: 50.0,
+              ),
             );
           } else if (state is SearchTvError) {
             return Center(
@@ -49,7 +53,7 @@ class SearchPageTv extends StatelessWidget {
                   RaisedButton(
                     textColor: Colors.white,
                     elevation: 0,
-                    color: Colors.blue,
+                    color: Colors.orangeAccent,
                     onPressed: () {
                       Navigator.pushReplacement(
                           context,

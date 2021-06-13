@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:movies/blocs/movie_bloc/movie_info_bloc.dart';
 import 'package:movies/screens/movieinfo.dart';
 import 'package:movies/screens/search_page/cubit/search_cubit.dart';
@@ -25,7 +26,10 @@ class Initalmovies extends StatelessWidget {
         ),
         body: state.status == MovieStatus.loading
             ? Center(
-                child: CircularProgressIndicator(),
+                child: SpinKitSquareCircle(
+                  color: Colors.white,
+                  size: 50.0,
+                ),
               )
             : state.status == MovieStatus.success
                 ? Gridmovies(movies: state.movies)

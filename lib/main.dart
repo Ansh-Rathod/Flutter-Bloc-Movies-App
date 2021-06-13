@@ -27,8 +27,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         theme: ThemeData(
           textTheme: GoogleFonts.montserratTextTheme(),
-          primaryColor: Colors.blue,
-          accentColor: Colors.blue,
+          primaryColor: Colors.orangeAccent,
+          accentColor: Colors.orangeAccent,
           appBarTheme: AppBarTheme(
             backgroundColor: Colors.transparent,
             elevation: 0,

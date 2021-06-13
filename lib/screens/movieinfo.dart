@@ -11,6 +11,7 @@ import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:movies/screens/widgets/movies_carausols.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class MovieInfo extends StatelessWidget {
   @override
@@ -20,7 +21,10 @@ class MovieInfo extends StatelessWidget {
         builder: (context, state) {
           if (state is MovieInfoLoading) {
             return Center(
-              child: CircularProgressIndicator(),
+              child: SpinKitSquareCircle(
+                color: Colors.orangeAccent,
+                size: 50.0,
+              ),
             );
           } else if (state is MovieInfosuccess) {
             return Scaffold(

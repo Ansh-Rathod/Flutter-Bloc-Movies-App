@@ -7,6 +7,7 @@ import 'package:movies/screens/widgets/movies_carausols.dart';
 import 'package:movies/screens/widgets/treanding.dart';
 import 'package:movies/screens/widgets/trending_tv.dart';
 import 'package:movies/screens/widgets/tv_carausols.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -24,7 +25,10 @@ class Home extends StatelessWidget {
         builder: (context, state) {
           if (state is FetchHomeLoading) {
             return Center(
-              child: CircularProgressIndicator(),
+              child: SpinKitSquareCircle(
+                color: Colors.orangeAccent,
+                size: 50.0,
+              ),
             );
           } else if (state is FetchHomeError) {
             return Center(
@@ -51,7 +55,7 @@ class Home extends StatelessWidget {
                   RaisedButton(
                     textColor: Colors.white,
                     elevation: 0,
-                    color: Colors.blue,
+                    color: Colors.orangeAccent,
                     onPressed: () {
                       Navigator.pushReplacement(
                           context,

@@ -8,6 +8,7 @@ import 'package:movies/blocs/tv_bloc/tv_info_bloc.dart';
 import 'package:movies/screens/widgets/company_carasouls.dart';
 import 'package:movies/screens/widgets/image_grid.dart';
 import 'package:movies/screens/widgets/image_view.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 import 'package:movies/screens/widgets/movies_carausols.dart';
 import 'package:movies/screens/widgets/show_text.dart';
@@ -24,7 +25,10 @@ class TvInfo extends StatelessWidget {
         builder: (context, state) {
           if (state is TvInfoLoading) {
             return Center(
-              child: CircularProgressIndicator(),
+              child: SpinKitSquareCircle(
+                color: Colors.orangeAccent,
+                size: 50.0,
+              ),
             );
           } else if (state is TvInfosuccess) {
             return Scaffold(
