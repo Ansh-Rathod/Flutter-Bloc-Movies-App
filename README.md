@@ -4,7 +4,6 @@ A new Flutter project.
 
 - with firebase and TMDB API[(The Movie Database api)](https://developers.themoviedb.org/3).
 - The app contains all movies\shows info and their video trailers.
-- To add Video trailer i used flutter_widget_from_html Package.
 
 <br>
 <br>
